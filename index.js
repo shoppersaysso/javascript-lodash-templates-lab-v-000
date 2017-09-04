@@ -14,7 +14,7 @@ function createPost() {
   var postElement = document.getElementById("post");
 
   postElement.innerHTML = blogSection;
-  postElement.getElementsByTagName("footer")[0].innerHTML = commentsSection;
+  postElement.getElementsByTagName("footer")[0].innerHTML = commentsDiv;
 }
 
 
