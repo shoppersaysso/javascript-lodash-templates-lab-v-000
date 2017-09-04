@@ -26,5 +26,5 @@ function postComment() {
   var commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
 
   var commentsDiv = document.getElementById("comments");
-  commentsDiv.innerHTML += commentTemplate({ 'comment': comment, 'commenter': commenter });
+  commentsSection.innerHTML += commentTemplate({ 'comment': comment, 'commenter': commenter });
 }
