@@ -15,7 +15,7 @@ function createPost() {
 
   postElement.innerHTML = blogSection;
   postElement.getElementsByTagName("footer")[0].innerHTML = commentsSection;
-  }
+}
 
 
 
