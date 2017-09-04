@@ -17,8 +17,6 @@ function createPost() {
   postElement.getElementsByTagName("footer")[0].innerHTML = commentsSection;
 }
 
-
-
 function postComment() {
   var commenter = document.getElementById("commenter").value;
   var comment = document.getElementById("comment").value;
