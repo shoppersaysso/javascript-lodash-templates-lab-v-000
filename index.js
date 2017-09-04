@@ -1,7 +1,7 @@
 function createPost() {
   var postAuthor = document.getElementById("postAuthor").value;
   var postTitle = document.getElementById("postTitle").value;
-  var postBody = document.getElementById("postBody").value
+  var post = document.getElementById("postBody").value
 
   var pageTemplate = _.template(document.getElementById("page-template").innerHTML);
   var postTemplate = _.template(document.getElementById("post-template").innerHTML);
