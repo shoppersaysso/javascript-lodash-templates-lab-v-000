@@ -20,6 +20,7 @@ function createPost() {
 
 
 function postComment() {
+  
   var commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
 
   var commentText = document.getElementById("commentText").value;
