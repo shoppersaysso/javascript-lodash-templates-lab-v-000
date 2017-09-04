@@ -17,6 +17,8 @@ function createPost() {
   postElement.getElementsByTagName("footer")[0].innerHTML = commentsSection;
 }
 
+
+
 function postComment() {
   var commenter = document.getElementById("commenter").value;
   var comment = document.getElementById("comment").value;
@@ -24,5 +26,5 @@ function postComment() {
   var commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
 
   var commentsDiv = document.getElementById("comments");
-  commentsSection.innerHTML += commentTemplate({ 'comment': comment, 'commenter': commenter });
+  commentsDiv.innerHTML += commentTemplate({ 'comment': comment, 'commenter': commenter });
 }
