@@ -20,11 +20,11 @@ function createPost() {
 
 
 function postComment() {
-  var commenter = document.getElementById("commenter").value;
-  var comment = document.getElementById("comment").value;
-
   var commentTemplate = _.template(document.getElementById("comment-template").innerHTML);
 
-  var commentsDiv = document.getElementById("comments");
-  commentsDiv.innerHTML += commentTemplate({ 'comment': comment, 'commenter': commenter });
+  var commentText = document.getElementById("commentText").value;
+  var commenterName = document.getElementById("commenter").value;
+
+  var commentsSection = document.getElementById("comments");
+  commentsSection.innerHTML += commentTemplate({ 'commenter': commenterName, 'comment': commentText });
 }
